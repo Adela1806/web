@@ -72,6 +72,9 @@ body {
         transition: 0.5s;
         border-top: 1px solid var(--color-text);
         border-left: 1px solid var(--color-text);
+        &.show {
+          right: 0;
+        }
       }
     }
     .nav__menu {
@@ -97,12 +100,8 @@ body {
   body {
     margin: 0;
   }
-  .home {
-    height: 100vh;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .button {
-    margin-bottom: 3rem;
+  .nav__menu {
+    top: var(--header-height);
   }
   .nav__list {
     display: flex;
@@ -121,4 +120,11 @@ body {
   .home__social-icon {
     font-size: 1.5rem;
   }
+  .nav__menu--toggle {
+    display: none;
+  }
+}
+
+.nav__menu--toggle {
+  cursor: pointer;
 }
