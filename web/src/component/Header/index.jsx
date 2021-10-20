@@ -29,7 +29,7 @@ const Header = () => {
           <AiFillDribbbleCircle />
         </div>
 
-        <div className={"nav__menu " + (showMenu ? "show" : "")} id="nav-menu">
+        <div className={"nav__menu " + (showMenu ? "-show" : "")} id="nav-menu">
           <ul className="nav__list">
             <li className="nav__item">
               <a className="nav__link" href="">

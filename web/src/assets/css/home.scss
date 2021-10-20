@@ -1,0 +1,74 @@
+@import "media", "reset";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Raleway:wght@300&display=swap");
+
+.bd-grid {
+  display: grid;
+  grid-template-columns: 100%;
+  max-width: 1200px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  align-items: center;
+  .home__data {
+    padding-top: 2rem;
+    text-align: center;
+    .home__title {
+      margin-bottom: 0.5rem;
+      color: var(--color-first);
+    }
+    .home__name {
+      display: block;
+      margin-bottom: 1.5rem;
+      font-size: var(--h3-font-size);
+    }
+
+    .button {
+      display: inline-block;
+      padding: 0.5rem 1.5rem;
+      margin-bottom: 1rem;
+      background-color: var(--color-first);
+      color: var(--color-text);
+      border-radius: 1.5rem;
+    }
+
+    .home__social {
+      display: flex;
+      align-items: center;
+      text-align: initial;
+      .home__social--icon {
+        margin-right: 1rem;
+        color: var(--color-text);
+        z-index: var(--z-back);
+      }
+    }
+  }
+  .home__img {
+    padding: 2rem;
+  }
+}
+
+@include large() {
+  .home {
+    margin: 0;
+    height: 100vh;
+    grid-template-columns: repeat(2, 1fr);
+    .home__data {
+      padding: 0;
+      text-align: initial;
+      .button {
+        margin-bottom: 3rem;
+      }
+      .home__social {
+        .home__social-icon {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@include xl() {
+  .bd-grid {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
