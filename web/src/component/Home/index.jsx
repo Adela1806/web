@@ -1,43 +1,43 @@
 import React from "react";
 
-import { SVG } from "../../constants/SVG";
+import { SVG } from "../../assets/icons/SVG";
 import { SiGithub } from "react-icons/si";
 import { BsLinkedin } from "react-icons/bs";
 import { SiInstagram } from "react-icons/si";
 
-import "../../assets/css/home.scss";
-
 const Home = () => {
   return (
-    <div class="home bd-grid">
-      <div class="home__data">
-        <h1 class="home__title">Hello Dribbble</h1>
+    <div className="body">
+      <div class="home bd-grid">
+        <div class="home__data">
+          <h1 class="home__title">Hello Dribbble</h1>
 
-        <span class="home__name">I'am Bedimcode</span>
+          <span class="home__name">I'am Bedimcode</span>
 
-        <a href="#" class="button">
-          Explorar
-        </a>
-
-        <div class="home__social">
-          <span class="home__social-name">Siguenos</span>
-
-          <a href="" class="home__social--icon">
-            <SiGithub />
+          <a href="#" class="button">
+            Explorar
           </a>
 
-          <a href="" class="home__social--icon">
-            <BsLinkedin />
-          </a>
+          <div class="home__social">
+            <span class="home__social-name">Siguenos</span>
 
-          <a href="" class="home__social--icon">
-            <SiInstagram />
-          </a>
+            <a href="" class="home__social--icon">
+              <SiGithub />
+            </a>
+
+            <a href="" class="home__social--icon">
+              <BsLinkedin />
+            </a>
+
+            <a href="" class="home__social--icon">
+              <SiInstagram />
+            </a>
+          </div>
         </div>
-      </div>
 
-      <div class="home__img">
-        <SVG.HomeBackground />
+        <div class="home__img">
+          <SVG.HomeBackground />
+        </div>
       </div>
     </div>
   );

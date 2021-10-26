@@ -1,4 +1,3 @@
-@import "media", "reset";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Raleway:wght@300&display=swap");
 
 .home {
@@ -45,7 +44,6 @@
       .home__social--icon {
         margin-right: 1rem;
         color: var(--color-text);
-        z-index: var(--z-back);
       }
     }
   }

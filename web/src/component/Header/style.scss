@@ -1,42 +1,4 @@
-@import "media", "reset";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Raleway:wght@300&display=swap");
-
-//height
-:root {
-  --header-height: 3rem;
-}
-
-//color
-:root {
-  --color-first: #ea4c89;
-  --color-secondary: #1d2063;
-  --color-text: #fff;
-}
-
-//font
-:root {
-  --heading-font: "Raleway";
-  --body-font: "Open Sans";
-  --h1-font-size: 2rem;
-  --h3-font-size: 1rem;
-  --small-font-size: 0.8rem;
-}
-
-//z-index
-:root {
-  --z-back: -10;
-  --z-normal: 1;
-  --z-tooltip: 10;
-  --z-fixed: 100;
-  --z-modal: 1000;
-}
-
-body {
-  margin: var(--header-height) 0 0 0;
-  color: var(--color-text);
-  background-color: var(--color-secondary);
-  font-family: var(--body-font);
-}
 
 .bd-grid {
   display: grid;
@@ -61,7 +23,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  .nav-logo {
+    font-size: 1.5rem;
+  }
   @include sm() {
     .nav__menu {
       position: fixed;
